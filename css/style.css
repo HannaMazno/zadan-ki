@@ -31,24 +31,61 @@ header h2 {
 
 .content {
     display: flex;
-    margin: 15px 25px;
+    padding: 15px;
+    margin: 15px;
+
 }
 
 .main {
-    flex-basis: 64%;
+    flex-basis: 60%;
     background-color: #c7dffc;
     margin-right: 68px;
     padding: 20px 45px 25px 15px;
+   
 }
+
+.text-main {
+    background-color: #c7dffc;
+    padding: 20px;
+    margin-right: 15px;
+}
+
 
 .main h3 {
     padding-bottom: 20px;
 }
 
+
 .sidebar {
-    flex-basis: 36%;
-    background-color: #fcc7dc;
+    flex-basis: 40%;
     padding: 20px 10px 25px 20px;
+  
+}
+
+.leftsidebar {
+    flex-basis: 200px;  
+}
+
+.text-sidebar {
+    background-color: #fcc7dc;
+    padding: 20px 12px 25px 20px;
+}
+
+.text-sidebar.second-page {
+    margin-top: -75px;
+}
+
+
+.li-left {
+    margin-left: 20px;
+}
+
+.sl-content {
+    min-width: 200px;
+    min-height: 150px;
+    background-color: #f8db8a;
+    padding: 25px 18px 25px 0;
+    margin-right: 15px;
 }
 
 /* footer */
@@ -61,8 +98,15 @@ footer {
     padding: 20px 15px;
 }
 
+nav a::after {
+    content:".";
+    height: 12px;
+    width: 2px;
+    background-color: #5a705b;
+    margin-left: 5px;
+    margin-right: 5px; 
+}
 
-
-
-
-
+nav a:last-child::after {
+    content:"";
+   }
