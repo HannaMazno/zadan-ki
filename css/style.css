@@ -5,7 +5,7 @@ box-sizing: border-box;
 } 
 
 h1, h2, h3, h4, h5, h6 {
-    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -13,100 +13,55 @@ body {
     font-size: 13px;
 }
 /* header */
+.wrapper {
+    max-width: 940px;
+    margin: 20px auto;
+}
+
 header {
-    min-width: 940px;
+    width: 100%;
     min-height: 50px;
     background-color: #ddfa82;
-    margin: 10px 13px 15px 14px;
 }
-
-header h2 {
-    color: #838b6c;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-}
-
-/* content */
 
 .content {
     display: flex;
-    padding: 15px;
     margin: 15px;
-
 }
 
 .main {
-    flex-basis: 60%;
+    width: 65%;
+}
+
+.main-inner {
     background-color: #c7dffc;
-    margin-right: 68px;
-    padding: 20px 45px 25px 15px;
-   
+    margin-right: 60px;
+    padding: 20px 30px 30px 15px;
 }
 
-.text-main {
-    background-color: #c7dffc;
-    padding: 20px;
-    margin-right: 15px;
+h3 {
+    color: #666666;
+    padding-top: 13px;
+    padding-left: 30px;
 }
 
-
-.main h3 {
-    padding-bottom: 20px;
+h4 {
+    margin-bottom: 10px;
 }
 
-
-.sidebar {
-    flex-basis: 40%;
-    padding: 20px 10px 25px 20px;
-  
+.aside {
+    width: 35%;
 }
 
-.leftsidebar {
-    flex-basis: 200px;  
-}
-
-.text-sidebar {
+.aside-inner {
     background-color: #fcc7dc;
-    padding: 20px 12px 25px 20px;
+    padding: 20px 16px 25px 20px;
 }
-
-.text-sidebar.second-page {
-    margin-top: -75px;
-}
-
-
-.li-left {
-    margin-left: 20px;
-}
-
-.sl-content {
-    min-width: 200px;
-    min-height: 150px;
-    background-color: #f8db8a;
-    padding: 25px 18px 25px 0;
-    margin-right: 15px;
-}
-
-/* footer */
 
 footer {
-    min-width: 940px;
+    width: 100%;
     min-height: 50px;
-    background-color: #a7cda8;
-    margin: 10px 13px 15px 14px;
-    padding: 20px 15px;
+    background-color: #a7cda8; 
+    padding-top: 20px;
+    padding-left: 15px;
 }
-
-nav a::after {
-    content:".";
-    height: 12px;
-    width: 2px;
-    background-color: #5a705b;
-    margin-left: 5px;
-    margin-right: 5px; 
-}
-
-nav a:last-child::after {
-    content:"";
-   }
