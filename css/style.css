@@ -30,7 +30,11 @@ header {
 }
 
 .main {
-    width: 65%;
+    width: 80%;
+}
+
+.main-1 {
+    width: 50%;
 }
 
 .main-inner {
@@ -50,13 +54,36 @@ h4 {
 }
 
 .aside {
-    width: 35%;
+    width: 20%;
+}
+
+.aside-1 {
+    width: 25%;
+}
+
+.aside-2 {
+    width: 25%;
 }
 
 .aside-inner {
     background-color: #fcc7dc;
     padding: 20px 16px 25px 20px;
 }
+
+.aside-iner.third {
+    background-color: #f8db8a;
+    margin-right: 15px;
+    padding: 25px 18px 20px 0;
+}
+
+.right {
+    margin-left: 40px;
+}
+
+.aside-inner.higher {
+    margin-top: -40px;
+}
+
 
 footer {
     width: 100%;
@@ -65,3 +92,25 @@ footer {
     padding-top: 20px;
     padding-left: 15px;
 }
+
+nav {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: inline-block;
+
+}
+
+.nav-link::after  {
+    content:"";
+    width: 2px;
+    height: 10px;
+    background-color: #5a705b;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
