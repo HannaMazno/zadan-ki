@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 15px;
 }
 /* header */
 .wraper {
@@ -144,39 +144,38 @@ footer {
 .test-float {
     max-width: 600px;
     padding: 38px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .img-left {
   float:left;
-  margin-right: 17px;
+  margin-right: 16px;
+  margin-bottom: 8px;
 }
 
 .img-right {
   float: right;
-  margin-left: 17px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .left-column {
   float: left;
-  width: 24%; 
+  width: 22%; 
 }
 
 .right-column {
   float: right;
-  width: 76%;
+  width: 78%;
 }
 
-.left-column.left-second {
-  width: 113px;
-}
-
-.right-column.right-second {
-  width: 589px;
-  padding-left: 15px;
-}
 .last-paragraph {
   clear: both;
+}
+
+p {
+  margin-left: 5px;
+  margin-bottom: 16px;
 }
 
 /* float-second */
@@ -185,12 +184,28 @@ footer {
   max-width: 727px;
   margin: 20px auto;
   padding: 5px;
+  background-color: aqua;
 }
 
 .inner {
   border: #000 solid 2px;
-  float: left;
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.inner.fix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+/* flex */
+.page {
+  background-color: black;
 }
