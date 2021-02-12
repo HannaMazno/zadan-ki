@@ -5,32 +5,70 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>form</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="page">
     <form class="form" action="#" method="GET">
       <h1 class="title">sign in</h1>
       <div class="input-form">
-        <p class="text">login</p>
-        <input class="input" tabindex="1" type="text" placeholder="Login">
+        <label for="login" class="text">login</label>
+        <input class="input" type="text" placeholder="Login" id="login">
       </div>
-      <div>
-        <p class="text">password</p>
-        <input class="input" tabindex="2" type="password" placeholder="password">
+      <div class="input-form">
+        <label for="password" class="text">password</label>
+        <input class="input" type="password" placeholder="password" id="password">
       </div>
-      <div>
-        <div class="form-check">
-          <input class="input input-check" type="checkbox" id="remember me">
-          <label for="remember me">Remember me on this computer</label> 
+        <div class="links">
+          <a class="link-form" href="#">Forgot your password?</a>
+          <a class="link-form" href="#">Register now</a>
         </div>
-        <button type="submit">Sign In</button>
-      </div>
-        <a href="#">Forgot your password?</a>
-        <a href="#">Register now</a>
-      </div>
+        <div class="radio">
+          <div class="form-radio">
+            <input class="input-radio" type="radio" id="female" name="male">
+            <label class="radio-style" for="female">female</label>
+          </div>
+          <div class="form-radio">
+            <input checked class="input-radio" type="radio" id="male" name="male">
+            <label class="radio-style" for="male">male</label>
+          </div>
+          <div class="form-radio">
+            <input class="input-radio" type="radio" id="secret" disabled name="male">
+            <label class="radio-style" for="secret">Incognito</label>
+          </div>
+        </div>
+        <div class="info">
+          <label class="label-info label text" for="information">Information</label>
+          <textarea class="info-textarea" name="iformation" id="information"></textarea>
+         </div>
+         <div class="file">
+          <label class="label-file label text" for="file">
+            <div class="icon-wrapper"><i class="fas fa-download icon"></i></div>
+            <div class="file-text">add a file</div>
+          </label>
+          <input class="input-file" type="file" id="file" name="file">
+         </div>
+         <div class="select">
+           <select class="form-select" name="City" id="city">
+              <option selected>choise your city</option> 
+              <option value="Kyiv">Kyiv</option>
+              <option value="Kharkiv">Kharkiv</option>
+              <option value="Odesa">Odesa</option>
+              <option value="Dnipro">Dnipro</option>
+              <option value="Zaporizhzhia">Zaporizhzhia</option>
+           </select>
+         </div>
+         <div class="sign-in">
+          <div class="form-check">
+            <input class="input-check" type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me on this computer</label> 
+          </div>
+          <button class="submit-btn" type="submit">Sign In</button>
+        </div>
+     </div>
     </form>
   </div>
 </body>
