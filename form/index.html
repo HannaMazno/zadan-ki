@@ -3,72 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no ">
+  <title>Form</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="page">
-    <form class="form" action="#" method="GET">
-      <h1 class="title">sign in</h1>
-      <div class="input-form">
-        <label for="login" class="text">login</label>
-        <input class="input" type="text" placeholder="Login" id="login">
-      </div>
-      <div class="input-form">
-        <label for="password" class="text">password</label>
-        <input class="input" type="password" placeholder="password" id="password">
-      </div>
-        <div class="links">
-          <a class="link-form" href="#">Forgot your password?</a>
-          <a class="link-form" href="#">Register now</a>
+    <form action="#" method="GET">
+      <div class="form">
+        <h1 class="title">sign in</h1>
+        <div class="input-form">
+          <label for="login" class="text">login</label>
+          <input class="input" type="text" placeholder="Login" id="login">
         </div>
-        <div class="radio">
-          <div class="form-radio">
-            <input class="input-radio" type="radio" id="female" name="male">
-            <label class="radio-style" for="female">female</label>
-          </div>
-          <div class="form-radio">
-            <input checked class="input-radio" type="radio" id="male" name="male">
-            <label class="radio-style" for="male">male</label>
-          </div>
-          <div class="form-radio">
-            <input class="input-radio" type="radio" id="secret" disabled name="male">
-            <label class="radio-style" for="secret">Incognito</label>
-          </div>
+        <div class="input-form">
+          <label for="password" class="text">Password</label>
+          <input class="input" type="password" placeholder="password" id="password">
         </div>
-        <div class="info">
-          <label class="label-info label text" for="information">Information</label>
-          <textarea class="info-textarea" name="iformation" id="information"></textarea>
+          <div class="input-form">
+            <div class="links">
+              <a class="link-form" href="#">Forgot your password?</a>
+              <a class="link-form" href="#">Register now</a>
+            </div>
          </div>
-         <div class="file">
-          <label class="label-file label text" for="file">
-            <div class="icon-wrapper"><i class="fas fa-download icon"></i></div>
-            <div class="file-text">add a file</div>
-          </label>
-          <input class="input-file" type="file" id="file" name="file">
+          <div class="input-form">
+            <div class="radio">
+              <div class="form-check">
+                <input class=" input-check" type="radio" id="female" name="male">
+                <label class="radio-style" for="female">female</label>
+              </div>
+              <div class="form-check">
+                <input checked class="input-check" type="radio" id="male" name="male">
+                <label class="radio-style" for="male">male</label>
+              </div>
+              <div class="form-check">
+                <input class="input-check" type="radio" id="secret" disabled name="male">
+                <label class="radio-style disabled" for="secret">Incognito</label>
+              </div>
+            </div>
          </div>
-         <div class="select">
-           <select class="form-select" name="City" id="city">
+           <div class="input-form">
+            <label class="label-info label text" for="textarea">Information</label>
+            <textarea class="input" name="iformation" id="textarea" rows="5"></textarea>
+           </div>
+           <div class="input-form">
+             <div class="file">
+              <label class="label-file label text" for="file">
+                <div class="icon-wrapper"><i class="fas fa-download icon"></i></div>
+                <div class="file-text">add a file</div>
+              </label>
+              <input class="input-file" type="file" id="file" name="file">
+             </div>
+           </div>
+           <div class="input-form">
+            <select class="input form-select" id="select">
               <option selected>choise your city</option> 
               <option value="Kyiv">Kyiv</option>
               <option value="Kharkiv">Kharkiv</option>
               <option value="Odesa">Odesa</option>
               <option value="Dnipro">Dnipro</option>
               <option value="Zaporizhzhia">Zaporizhzhia</option>
-           </select>
-         </div>
-         <div class="sign-in">
-          <div class="form-check">
-            <input class="input-check" type="checkbox" id="remember-me">
-            <label for="remember-me">Remember me on this computer</label> 
+            </select>
           </div>
-          <button class="submit-btn" type="submit">Sign In</button>
-        </div>
-     </div>
+           <div class="input-form">
+            <div class="form-check">
+                <input class="input-check" type="checkbox" id="remember-me">
+                <label class="label-remember" for="remember-me">Remember me on this computer
+                </label> 
+            </div>
+            <button class="submit-btn" type="submit">Sign In</button>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"></path></svg>
+          </div>
+         </div>
+       </div>
+      </div>
     </form>
   </div>
 </body>
