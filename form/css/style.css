@@ -90,7 +90,7 @@ body {
   margin: 0 0 20px;
 }
 
-.submit-btn {
+.btn {
   background: #569b4f;
   color: #fff;
   font-size: 16px;
@@ -98,9 +98,10 @@ body {
   white-space: nowrap;
   font-weight: 900;
   cursor: pointer;
+  text-align: center;
 }
 
-.submit-btn:hover {
+.btn:hover {
   background: rgb(77, 129, 77);
 }
 
@@ -128,7 +129,7 @@ body {
 }
 
 .link-form:hover {
-  color: rgb(58, 179, 74);
+  color: #4566ac;
 }
 
 .link-form::after:hover {
@@ -144,10 +145,10 @@ body {
 .radio-style {
   color: #569b4f;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.radio-style.disabled {
+.input-check:disabled + label {
   color:rgb(151, 151, 151);
 }
 .label {
@@ -215,9 +216,9 @@ body {
   outline: none;
   font-size: 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   display: block;
-  background-image: url('/form/img/arrow-down-icon-svg.png');
+  background-image: url('/form/arrow/arrow-down-solid.svg');
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -226,12 +227,15 @@ body {
   background-position: right 10px top 50%;
   padding-right: 20px;
   padding-left: 10px;
+  background-size: 16px auto;
 }
 
-.form-check {
+.form-check,
+.form-radio {
   padding: 0 0 0 20px;
   position: relative;
-  margin: 0 10px 0 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .input-check {
@@ -240,7 +244,46 @@ body {
   top: 5px
 }
 
+.input-check:checked + label {
+  color: #000;
+  font-weight: 700;
+}
+
 .label-remember {
   display: inline-block;
   vertical-align: top;
+}
+
+.splitter {
+  text-align: center;
+}
+
+.navy {
+  background: #4566ac;
+}
+
+.blue {
+  background: #2ab3e5;
+}
+
+.blue,
+.navy {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navy:hover {
+  background: #274c9b
+}
+
+.blue:hover {
+  background: #0b83af
+}
+
+.splitter {
+  margin: 5px;
+}
+
+.upper {
+  text-transform: uppercase;
 }
