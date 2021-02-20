@@ -71,7 +71,7 @@ body {
   text-transform: uppercase;
 }
 
-.text {
+.label {
   display: block;
   font-size: 16px;
   font-weight: 700;
@@ -94,11 +94,15 @@ body {
   background: #569b4f;
   color: #fff;
   font-size: 16px;
-  padding: 13px 20px;
+  line-height: 22px;
+  padding: 10px 20px;
   white-space: nowrap;
   font-weight: 900;
   cursor: pointer;
   text-align: center;
+  /* width: 100%; */
+  display: block;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -151,16 +155,10 @@ body {
 .input-check:disabled + label {
   color:rgb(151, 151, 151);
 }
-.label {
-  display: block;
-}
 
  textarea.input {
   width: 100%;
-  /* min-height: 150px;
-  max-height: 300px; */
   resize: vertical;
-  padding: 5px;
 }
 
 .info {
@@ -182,6 +180,7 @@ body {
 .input-file {
   visibility: hidden;
   opacity: 0;
+  position: absolute;
 }
 
 .icon-wrapper {
@@ -197,28 +196,42 @@ body {
   background: #569b4f;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+
+.hover-file {
+  height: 80px;
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.label-file:hover {
+  background: rgb(77, 129, 77);
+  /* height: 80px; */
 }
 
 .file-text {
   color: #fff;
   width: 100%;
-  cursor: pointer;
+  padding: 10px;
 }
 
 .select {
   margin: 0 0 20px;
 }
 
-.form-select {
-  width: 100%;
-  border:  1px solid currentColor;
+select.input {
   outline: none;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 400;
   display: block;
-  background-image: url('/form/arrow/arrow-down-solid.svg');
+  background-image: url(../img/arrow.png.png);
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -227,21 +240,25 @@ body {
   background-position: right 10px top 50%;
   padding-right: 20px;
   padding-left: 10px;
-  background-size: 16px auto;
+  background-size: 21px auto;
 }
 
-.form-check,
+.form-check, 
 .form-radio {
   padding: 0 0 0 20px;
   position: relative;
+}
+
+.remember-me {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .input-check {
   position: absolute;
   left: 0;
-  top: 5px
+  top: 4px
 }
 
 .input-check:checked + label {
@@ -256,34 +273,37 @@ body {
 
 .splitter {
   text-align: center;
+  display: block;
+  margin: 5px;
 }
 
-.navy {
+.btn.btn-fb,
+.btn.btn-twit {
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.btn.btn-fb {
   background: #4566ac;
 }
 
-.blue {
+.btn.btn-twit {
   background: #2ab3e5;
 }
 
-.blue,
-.navy {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.navy:hover {
+.btn.btn-fb:hover {
   background: #274c9b
 }
 
-.blue:hover {
+.btn.btn-twit:hover {
   background: #0b83af
-}
-
-.splitter {
-  margin: 5px;
 }
 
 .upper {
   text-transform: uppercase;
+}
+
+.fab {
+  margin: 0 7px 0 0;
 }

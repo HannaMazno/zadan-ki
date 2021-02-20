@@ -17,11 +17,11 @@
       <div class="form">
         <h1 class="title">sign in</h1>
         <div class="input-form">
-          <label for="login" class="text">login</label>
-          <input class="input" type="text" placeholder="Login" id="login">
+          <label for="login" class="label">login</label>
+          <input class="input" type="label" placeholder="Login" id="login">
         </div>
         <div class="input-form">
-          <label for="password" class="text">Password</label>
+          <label for="password" class="label">Password</label>
           <input class="input" type="password" placeholder="Password" id="password">
         </div>
           <div class="input-form">
@@ -58,9 +58,12 @@
               </label>
               <input class="input-file" type="file" id="file" name="file">
              </div>
+             <div class="hover-file">
+               add file
+             </div>
            </div>
            <div class="input-form">
-            <select class="input form-select" id="select">
+            <select class="input" id="select">
               <option selected>choise your city</option> 
               <option value="Kyiv">Kyiv</option>
               <option value="Kharkiv">Kharkiv</option>
@@ -69,18 +72,18 @@
               <option value="Zaporizhzhia">Zaporizhzhia</option>
             </select>
           </div>
-           <div class="input-form">
+           <div class="input-form remember-me">
             <div class="form-check">
                 <input class="input-check" type="checkbox" id="remember-me">
                 <label class="label-remember" for="remember-me">Remember me on this computer
                 </label> 
-                <button class="btn" type="submit">Sign In</button>
               </div>
+              <button class="btn" type="submit">Sign In</button>
           </div>
           <div class="input-form">
-            <div class="btn navy"><i class="fab fa-facebook-f"></i>Join Now with <span class="upper">FACEBOOK</span></div>
-            <p class="splitter">or</p>
-            <div class="btn blue"><i class="fab fa-twitter"></i>Join Now with <span  class="upper">twitter</span></div>
+            <button class="btn btn-fb"><i class="fab fa-facebook-f"></i> Join Now with <span class="upper">FACEBOOK</span></button>
+            <span class="splitter">or</span>
+            <button class="btn btn-twit"><i class="fab fa-twitter"></i>Join Now with <span  class="upper">twitter</span></button>
           </div>
          </div>
        </div>
